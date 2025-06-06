@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHARAOH | Официальный фан-сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="albums.html">Релизы</a>
+            <a href="tour.html">Тур</a>
+        </nav>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PHARAOH</h1>
+            <p id="typewriter"></p>
+
+            <script>
+            const text = "Основатель Dead Dynasty. Голос поколения.";
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    document.getElementById("typewriter").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            typeWriter();
+            </script>
+            
+            <style>
+            #typewriter {
+                border-right: 2px solid #ff00ff;
+                animation: blink-caret 0.75s step-end infinite;
+            }
+            
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: #ff00ff; }
+            }
+            </style>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Блок "О нём" -->
+        <section class="about">
+            <div class="about-text">
+                <h2>Кто такой PHARAOH?</h2>
+                <p>Глеб Голубин (род. 30 января 1996) — российский рэп-исполнитель, автор песен и основатель лейбла
+                    <strong>Dead Dynasty</strong>. Начал карьеру в 2013 году и быстро стал одним из самых влиятельных
+                    артистов новой школы русского рэпа.</p>
+                <p>Известен своими экспериментами с звуком, мрачной эстетикой и хитам:</p>
+                <ul>
+                    <li>«5 минут назад»</li>
+                    <li>«Дико, например»</li>
+                    <li>«Champagne Squirt»</li>
+                    <li>«Лаллипап»</li>
+                </ul>
+            </div>
+            <div class="about-photo">
+                <img src="images/pharaoh-bio.jpg" alt="Pharaoh">
+            </div>
+        </section>
+
+        <!-- Фото-галерея -->
+        <section class="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/pharaoh-1.jpg" alt="Pharaoh на сцене">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pharaoh-2.jpg" alt="Студийная работа">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pharaoh-3.jpg" alt="Концерт">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pharaoh-4.jpg" alt="Dead Dynasty">
+                </div>
+            </div>
+        </section>
+
+        <!-- Ключевые факты -->
+        <section class="facts">
+            <h2>Факты</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <i class="fas fa-record-vinyl"></i>
+                    <h3>20+ релизов</h3>
+                    <p>Альбомы, микстейпы, синглы</p>
+                </div>
+                <div class="fact-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Dead Dynasty</h3>
+                    <p>Основал лейбл в 2014</p>
+                </div>
+                <div class="fact-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Уникальный стиль</h3>
+                    <p>Мрачный звук и лирика</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2024 Pharaoh Fan Site | Неофициальный ресурс</p>
+    </footer>
+</body>
+
+</html>

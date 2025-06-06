@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHARAOH | Релизы</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили специфичные для этой страницы */
+        .release-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .release-card {
+            background: #111;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .release-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 0, 255, 0.3);
+        }
+
+        .release-cover {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid #ff00ff;
+        }
+
+        .release-info {
+            padding: 15px;
+        }
+
+        .release-year {
+            color: #ff00ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="releases.html" class="active">Релизы</a>
+            <a href="tour.html">Тур</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="release-grid">
+             <!-- Альбом 10 -->
+             <div class="release-card">
+                <img src="images/album-1013.jpg" alt="10:13" class="release-cover">
+                <div class="release-info">
+                    <h3>10:13</h3>
+                    <p class="release-year">2025 · Альбом</p>
+                    <p>сказ о многогранности личности фараона</p>
+                </div>
+            </div>
+             <!-- Альбом 9 -->
+             <div class="release-card">
+                <img src="images/album-phrq.jpg" alt="PHREQUENCY" class="release-cover">
+                <div class="release-info">
+                    <h3>PHREQUENCY</h3>
+                    <p class="release-year">2023 · Альбом</p>
+                    <p>любовь и частота</p>
+                </div>
+            </div>
+             <!-- Альбом 8 -->
+             <div class="release-card">
+                <img src="images/album-phlr.jpg" alt="Philarmonia" class="release-cover">
+                <div class="release-info">
+                    <h3>PHILARMONIA</h3>
+                    <p class="release-year">2022 · Альбом</p>
+                    <p>Новый виток развития качества</p>
+                </div>
+            </div>
+             <!-- Сингл 4 -->
+             <div class="release-card">
+                <img src="images/s-akid.jpg" alt="Акид" class="release-cover">
+                <div class="release-info">
+                    <h3>Акид</h3>
+                    <p class="release-year">2021 · Сингл</p>
+                    <p>Культовый трек с необычным звучанием</p>
+                </div>
+            </div>
+             <!-- Альбом 7 -->
+             <div class="release-card">
+                <img src="images/album-mdd.jpg" alt="MDD" class="release-cover">
+                <div class="release-info">
+                    <h3>Million Dollar Depression</h3>
+                    <p class="release-year">2021 · Альбом</p>
+                    <p>"Разрушение себя - это единственный выход?"</p>
+                </div>
+            </div>
+            <!-- Альбом 6 -->
+            <div class="release-card">
+                <img src="images/album-pravilo.jpg" alt="Pravilo" class="release-cover">
+                <div class="release-info">
+                    <h3>Правило</h3>
+                    <p class="release-year">2020 · Альбом</p>
+                    <p>главный альбом 2020 года</p>
+                </div>
+            </div>
+            <!-- Альбом 5 -->
+            <div class="release-card">
+                <img src="images/album-pinkphloyd.jpg" alt="Pink Phloyd" class="release-cover">
+                <div class="release-info">
+                    <h3>Pink Phloyd</h3>
+                    <p class="release-year">2017 · Альбом</p>
+                    <p>18 треков, включая "Дико, например"</p>
+                </div>
+            </div>
+
+            <!-- Альбом 4 -->
+            <div class="release-card">
+                <img src="images/album-phuneral.jpg" alt="Phuneral" class="release-cover">
+                <div class="release-info">
+                    <h3>Phuneral</h3>
+                    <p class="release-year">2018 · Альбом</p>
+                    <p>Концептуальный "похоронный рэп"</p>
+                </div>
+            </div>
+             <!-- Сингл 3 -->
+             <div class="release-card">
+                <img src="images/s-mun.jpg" alt="На луне" class="release-cover">
+                <div class="release-info">
+                    <h3>На луне</h3>
+                    <p class="release-year">2018 · Сингл</p>
+                    <p>главный xит 2018 года</p>
+                </div>
+            </div>
+           
+             <!-- Сингл 2 -->
+             <div class="release-card">
+                <img src="images/s-dn.jpg" alt="Дико, например" class="release-cover">
+                <div class="release-info">
+                    <h3>Дико, например</h3>
+                    <p class="release-year">2017 · Сингл</p>
+                    <p>Культовый трек с необычным звучанием</p>
+                </div>
+            </div>
+             <!-- Альбом 3 -->
+             <div class="release-card">
+                <img src="images/album-phosphor.jpg" alt="PHOSPHOR" class="release-cover">
+                <div class="release-info">
+                    <h3>PHOSPHOR</h3>
+                    <p class="release-year">2016 · Альбом</p>
+                    <p>мрачнейшая атмосфера, речь о ненависти к миру</p>
+                </div>
+            </div>
+             <!-- Альбом 2 -->
+             <div class="release-card">
+                <img src="images/album-dolor.jpg" alt="DOLOR" class="release-cover">
+                <div class="release-info">
+                    <h3>DOLOR</h3>
+                    <p class="release-year">2015 · Альбом</p>
+                    <p>альбом полностью пропитан болезненным состоянием, терзающими душу эмоциями</p>
+                </div>
+            </div>
+            <!-- Сингл 1 -->
+            <div class="release-card">
+                <img src="images/s-smart.jpg" alt="Smart" class="release-cover">
+                <div class="release-info">
+                    <h3>Smart</h3>
+                    <p class="release-year">2018 · Сингл</p>
+                    <p>Трек, который взорвал чарты</p>
+                </div>
+            </div>
+            <!-- Альбом 1 -->
+            <div class="release-card">
+                <img src="images/album-phlora.jpg" alt="PHLORA" class="release-cover">
+                <div class="release-info">
+                    <h3>PHLORA</h3>
+                    <p class="release-year">2014 · Альбом</p>
+                    <p>Злой, маньяческий, мрачный, холодный рэп</p>
+                </div>
+            </div>
+            
+
+            
+            
+    </main>
+
+    <footer>
+        <p>© 2024 Pharaoh Fan Site. Неофициальный ресурс.</p>
+    </footer>
+</body>
+
+</html>
